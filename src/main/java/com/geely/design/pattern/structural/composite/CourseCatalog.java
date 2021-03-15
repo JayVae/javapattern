@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by geely
  */
-public class CourseCatalog extends CatalogComponent {
+public class  CourseCatalog extends CatalogComponent {
     private List<CatalogComponent> items = new ArrayList<CatalogComponent>();
     private String name;
     private Integer level;

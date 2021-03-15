@@ -14,6 +14,7 @@ public abstract class ACourse {
         this.packageCourse();
     }
 
+
     final void makePPT(){
         System.out.println("制作PPT");
     }
