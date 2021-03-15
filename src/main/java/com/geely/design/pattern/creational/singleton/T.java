@@ -12,9 +12,12 @@ public class T implements Runnable {
 
 //        ContainerSingleton.putInstance("object",new Object());
 //        Object instance = ContainerSingleton.getInstance("object");
-        ThreadLocalInstance instance = ThreadLocalInstance.getInstance();
+//
+//
+// ThreadLocalInstance instance = ThreadLocalInstance.getInstance();
 
-        System.out.println(Thread.currentThread().getName()+"  "+instance);
+        LazySingletonUnsafe lazySingletonUnsafe = LazySingletonUnsafe.getInstance();
+        System.out.println(Thread.currentThread().getName()+"  "+lazySingletonUnsafe);
 
     }
 }
